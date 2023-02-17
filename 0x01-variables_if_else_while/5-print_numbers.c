@@ -1,21 +1,11 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet except the letters q and e.
+ * main - Prints the numbers from 0-9.
 (*
  * Return: 0 on success
  */
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		if (c != 'q' && c != 'e')
-		{
-			putchar(c);
-		}
-		c++;
-	}
-	putchar('\n');
+	printf("0123456789\n");
 	return (0);
 }
