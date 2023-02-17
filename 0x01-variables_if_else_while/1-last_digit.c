@@ -2,30 +2,29 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main - Program to determine is a number is greater than 5, less than 6 or equal to 0
- *
- * Return: Always 0 (Success)
+ * main - Determine if a random number is positive, negative or zero.
+(*
+ * Return: 0 on success
  */
-
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if ((n % 10) > 5)
+	if (n < 0)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("%d is %s\n", n, "negative");
 	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
+	else if (n > 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("%d is %s\n", n, "positive");
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+		printf("%d is %s\n", n, "zero");
 	}
 	return (0);
+
 }
