@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * add - a function that adds two integers and returns the result
@@ -5,7 +6,7 @@
  * @two: second number input
  * Return: sum of a and b
  */
-int add(int a=89, int b=9)
+int add(int a, int b)
 {
 	
 	int n;
